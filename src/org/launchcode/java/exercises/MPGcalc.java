@@ -14,7 +14,6 @@ public class MPGcalc {
         in = new Scanner(System.in);
         distance = in.nextDouble();
         System.out.println("How many gallons did you burn?");
-        in = new Scanner(System.in);
         gallons = in.nextDouble();
         mpg = distance / gallons;
 
