@@ -3,18 +3,28 @@ package org.launchcode.java.exercises;
 /**
  * Created by max on 4/25/17.
  */
+import java.util.ArrayList;
+
 public class SumOfPos {
+    private static ArrayList<Integer> nums;
+
     public static void main(String[] args) {
 
-        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        ArrayList<Integer> nums = new ArrayList<>();
+
+        for (int i = 1; i < 11; i++){
+            nums.add(i);
+        }
+
         int sum = total(nums);
 
         System.out.println(sum);
     }
 
-    static int total(int[] nums){
+    static int total(ArrayList<Integer> nums){
+        SumOfPos.nums = nums;
         int sum = 0;
-        for (int i: nums){
+        for (Integer i: nums){
             if(i % 2 == 0){
                 sum += i;
             }
