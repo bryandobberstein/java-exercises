@@ -9,16 +9,16 @@ public class MenuItems {
     private String category;
     private boolean isNew;
 
-    public void setItem(String item){
-        this.item = item;
+    public void setItem(String aItem){
+        this.item = aItem;
     }
 
-    public void setCategory(String category){
-        this.category = category;
+    public void setCategory(String aCategory){
+        this.category = aCategory;
     }
 
-    public void setNew(boolean isNew){
-        this.isNew = isNew;
+    public void setNew(boolean aIsNew){
+        this.isNew = aIsNew;
     }
 
     public String getItem(){
