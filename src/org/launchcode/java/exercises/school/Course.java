@@ -9,6 +9,7 @@ public class Course {
 
     private String name;
     private int id;
+    private int credits;
     private HashMap<String, Integer> roster;
 
     public void setName(String aName){
@@ -31,7 +32,23 @@ public class Course {
         roster.put(aStudent.getName(), aStudent.getId());
     }
 
+    public void setCredits(int aCredits){
+        this.credits = aCredits;
+    }
+
+    public int getCredits(){
+        return this.credits;
+    }
+
     public HashMap<String, Integer> getRoster(){
         return this.roster;
+    }
+
+    public boolean equals(Object aCourse){
+        return ((Course) aCourse).getId() == this.getId();
+    }
+
+    public String toString(){
+        return "Course Name: " + this.name + "Course ID: " + this.id;
     }
 }
