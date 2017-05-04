@@ -21,8 +21,8 @@ public class Menu {
         return updated;
     }
 
-    public void setItems(String category, String item){
-        items.put(category, item);
+    public void setItems(MenuItem aItem){
+        items.put(aItem.getItem(), aItem.getCategory());
     }
 
     public HashMap getItems(){
