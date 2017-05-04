@@ -7,7 +7,7 @@ public class MenuItems {
 
     private String item;
     private String category;
-    private boolean isNew;
+    private boolean itemNew;
 
     public void setItem(String aItem){
         this.item = aItem;
@@ -17,8 +17,8 @@ public class MenuItems {
         this.category = aCategory;
     }
 
-    public void setNew(boolean aIsNew){
-        this.isNew = aIsNew;
+    public void setNew(boolean aItemNew){
+        this.itemNew = aItemNew;
     }
 
     public String getItem(){
@@ -29,7 +29,7 @@ public class MenuItems {
         return this.category;
     }
 
-    public boolean getNew(){
-        return this.isNew;
+    public boolean isNew(){
+        return this.itemNew;
     }
 }
