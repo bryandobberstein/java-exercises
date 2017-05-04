@@ -6,8 +6,8 @@ package org.launchcode.java.exercises.school;
 public class Student {
 
     private String name;
-    private int id;
-    private int nextStudentId = 1;
+    private final int id;
+    private static int nextStudentId = 1;
     private int credits;
     private double gpa;
 
@@ -23,7 +23,7 @@ public class Student {
     }
 
     public Student(String name){
-        this(name, nextStudentId);
+        this(name,nextStudentId);
         nextStudentId++;
     }
 
@@ -43,10 +43,6 @@ public class Student {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int aId) {
-        this.id = aId;
     }
 
     public void setCredits(int aCredits){
