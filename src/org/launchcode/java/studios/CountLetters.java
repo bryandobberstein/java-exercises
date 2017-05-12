@@ -31,7 +31,7 @@ public class CountLetters {
          }
 
         for (Map.Entry<Character, Integer> line : letterCount.entrySet()){
-            System.out.println(line);
+            System.out.println(line.getKey() + ": " + line.getValue());
         }
     }
 }
