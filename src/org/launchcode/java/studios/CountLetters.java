@@ -26,7 +26,9 @@ public class CountLetters {
                 }
             }
             else {
-                letterCount.computeIfPresent(c, (k, v) -> v + 1);
+                int val = letterCount.get(c);
+                val += 1;
+                letterCount.put(c, val);
             }
          }
 
